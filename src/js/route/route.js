@@ -19,5 +19,11 @@
         url: '/404',
         templateUrl: 'templates/404.tmpl'
       })
+      .state('create', {
+        url: '/create',
+        templateUrl: 'templates/create.tmpl',
+        controller: 'createController',
+        controllerAs: 'createCtrl'
+      })
   }
 })()

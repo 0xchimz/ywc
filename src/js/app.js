@@ -6,6 +6,7 @@
       'services.route',
       'controller.main',
       'controller.navbar',
+      'controller.create',
       'directive.navbar'
     ])
 })()
