@@ -49,5 +49,11 @@
         controller: 'reviewController',
         controllerAs: 'reviewCtrl'
       })
+      .state('profile', {
+        url: '/profile',
+        templateUrl: 'templates/profile.tmpl',
+        controller: 'profileController',
+        controllerAs: 'profileCtrl'
+      })
   }
 })()

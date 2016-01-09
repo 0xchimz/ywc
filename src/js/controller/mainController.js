@@ -5,6 +5,7 @@
     .controller('homeController', homeCtrl)
     .controller('tripController', tripCtrl)
     .controller('reviewController', reviewCtrl)
+    .controller('profileController', profileCtrl)
     .config(function(NotificationProvider) {
         NotificationProvider.setOptions({
             delay: 10000,
@@ -156,12 +157,12 @@
         ]
         $scope.rvCampaignList = [
           {
-            name: "กรุงเทพ - กาญจนบุรี",
+            name: "ปางอุ๋ย - แม่ฮ่องสอน",
             picture: "https://i.ytimg.com/vi/GE2BkLqMef4/maxresdefault.jpg",
             short_description: "blah blah blah",
             start_date: "",
             review: "GO SOME WHERE BLAH BLAH BLAH BLAH",
-            score: 90
+            score: 78.78
 
           },
           {
@@ -198,6 +199,10 @@
     }
     reviewCtrl.$inject =['$scope']
     function reviewCtrl ($scope){
+      var self = this
+
+    }
+    function profileCtrl (){
       var self = this
 
     }
