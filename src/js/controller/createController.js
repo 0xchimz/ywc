@@ -6,6 +6,11 @@
     createCtrl.$inject = []
     function createCtrl (){
       var self = this
-      self.selectedDate = new Date();
+      self.campaign = {
+        date: {
+          start: '',
+          end: ''
+        }
+      }
     }
 })()
