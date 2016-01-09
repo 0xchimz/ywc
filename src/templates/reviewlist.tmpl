@@ -1,0 +1,18 @@
+<div class="container">
+  <h1 class="text-center">ทริปที่มีคนรีวิว</h1>
+  <div class="col-lg-4 " ng-repeat="campaign in rvCampaignList" >
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <image class="img-thumbnail" src="{{campaign.picture}}" style="width=380; height=220">
+
+      </div>
+      <div class="panel-body">
+          <h3>{{campaign.name}}</h3>
+          <p>
+            {{campaign.short_description}}
+          </p>
+          <a class="btn btn-primary btn-block" ui-sref="rvcampaign({campaign_id: $index})">view</a>
+      </div>
+    </div>
+  </div>
+</div>
