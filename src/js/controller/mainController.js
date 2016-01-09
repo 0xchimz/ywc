@@ -47,7 +47,7 @@
         $scope.campaignList = [
           {
             name: "ปาย - เชียงใหม่",
-            picture: "/imgs/join_01.jpg",
+            picture: "/imgs/join_03.jpg",
             short_description: "blah blah blah",
             start_date: "",
             dateList:[
@@ -83,7 +83,7 @@
           },
           {
             name: "ปาย - เชียงใหม่",
-            picture: "https://i.ytimg.com/vi/GE2BkLqMef4/maxresdefault.jpg",
+            picture: "/imgs/join_06.jpg",
             short_description: "blah blah blah",
             start_date: "",
             dateList:[
@@ -119,7 +119,7 @@
           },
           {
             name: "ปาย - เชียงใหม่",
-            picture: "https://i.ytimg.com/vi/GE2BkLqMef4/maxresdefault.jpg",
+            picture: "/imgs/join_09.jpg",
             short_description: "blah blah blah",
             start_date: "",
             dateList:[

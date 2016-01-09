@@ -29,3 +29,23 @@
 .position_img{
   margin-left: 120px;
 }
+
+.item {
+  min-heigth: 200px;
+  height: 200px;
+  .b1 {
+    background: url('../imgs/b1.jpg');
+  }
+  .b2 {
+    background: url('../imgs/b2.jpg');
+  }
+  .b3 {
+    background: url('../imgs/b3.jpg');
+  }
+  .b4 {
+    background: url('../imgs/b4.jpg');
+  }
+  .b5 {
+    background: url('../imgs/b5.jpg');
+  }
+}
