@@ -19,5 +19,11 @@
         url: '/404',
         templateUrl: 'templates/404.tmpl'
       })
+      .state('campaign', {
+        url: '/campaign/{campaign_id:int}',
+        templateUrl: 'templates/campaign.tmpl',
+        controller: 'campaignController',
+        controllerAs: 'camCtrl'
+      })
   }
 })()

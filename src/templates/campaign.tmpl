@@ -1,0 +1,59 @@
+<div class="container">
+  <h1>{{camCtrl.campaign.name}}</h1>
+  <div class="description panel panel-default">
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-lg-8">
+            <image class="img-thumbnail" src="{{camCtrl.campaign.picture}}" style="max-height=300px;">
+        </div>
+        <div class="col-lg-4">
+          <div class="row date">
+            วันที่: <span>{{camCtrl.campaign.start_time | amCalendar}}</span> - <span>{{camCtrl.campaign.end_time | amCalendar}}</span>
+          </div>
+          <div class="row shortDesc">
+            รายละเอียดเบื้องต้น: {{camCtrl.campaign.short_description}}
+          </div>
+          <div class="traveller">
+            <div class="row">
+              <div class="owner">
+                <div class="col-lg-2">
+                  <img class="img-circle" src="http://zblogged.com/wp-content/uploads/2015/11/5.png" data-holder-rendered="true" style="width: 40px; height: 40px;">
+                </div>
+                <div class="col-lg-7" >
+                  <div >{{camCtrl.owner.name}}</div>
+                </div>
+                <div class="col-lg-3">
+                  6/8
+                </div>
+              </div>
+            </div>
+            <div ng-repeat="member in camCtrl.members" class="members row">
+              <div class="col-lg-2">
+                <img class="img-circle" src="{{member.picture}}" data-holder-rendered="true" style="width: 40px; height: 40px;">
+              </div>
+              <div class="col-lg-7" >
+                <div >{{member.name}}</div>
+              </div>
+              <div class="col-lg-3">
+              </div>
+            </div>
+          </div>
+          <div class="joinTrip">
+            <a href="#" class="btn btn-primary btn-block">join this trip</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tripPlan row">
+    <div ng-repeat="day in camCtrl.dayList" class="panel panel-default col-lg-4">
+      <p>
+        {{day.date}}
+      </p>
+
+
+      </div>
+    </div>
+
+  </div>
+</div>
