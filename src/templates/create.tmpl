@@ -24,7 +24,6 @@
         <label for="campaignName" class="col-sm-3 control-label">Prize</label>
         <div class="col-sm-9">
           <input type="text" class="form-control" name="campaignName" ng-model="createCtrl.campaign.prize" placeholder="Prize">
-          <span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
         </div>
       </div>
       <div class="form-group">
@@ -76,12 +75,14 @@
       </div>
     </div>
     <div class="col-sm-8">
-      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-        <div class="panel panel-default" ng-repeat="campaign in createCtrl.campaign.dateList">
+      <div class="panel-group panel-group-lists collapse in" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel" ng-repeat="campaign in createCtrl.campaign.dateList">
           <div class="panel-heading" role="tab" id="heading{{$index + 1}}">
-            <a href="javascript:;" data-toggle="collapse" data-parent="#accordion" data-target="#collapse{{$index + 1}}">
-              {{campaign.date | amDateFormat:'YYYY-MM-DD'}}
-            </a>
+            <h4 class="panel-title">
+              <a href="javascript:;" data-toggle="collapse" data-parent="#accordion" data-target="#collapse{{$index + 1}}">
+                {{campaign.date | amDateFormat:'YYYY-MM-DD'}}
+              </a>
+            </h4>
             </div>
             <div id="collapse{{$index + 1}}" class="panel-collapse collapse " role="tabpanel" aria-labelledby="heading{{$index + 1}}">
               <div class="panel-body">
