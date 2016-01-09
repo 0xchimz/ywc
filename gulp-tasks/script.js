@@ -11,12 +11,11 @@ gulp.task('script', function () {
     './bower_components/angular-animate/angular-animate.min.js',
     './bower_components/angular-ui-router/release/angular-ui-router.js',
     './bower_components/angular-bootstrap/ui-bootstrap-tpls.js',
-    './bower_components/angular-permission/dist/angular-permission.js',
     './bower_components/angular-moment/angular-moment.min.js',
     './bower_components/bootstrap-sass/assets/javascripts/bootstrap.js',
     './src/js/**/*.js'])
     .pipe(concat('scripts.js'))
-    .pipe(uglify({mangle: false}))
+    // .pipe(uglify({mangle: false}))
     .pipe(gulp.dest('./www/js'))
     .pipe(browserSync.reload({
       stream: true
