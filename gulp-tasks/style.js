@@ -8,11 +8,9 @@ var browserSync = require('browser-sync')
 
 gulp.task('style', function () {
   return gulp.src([
-    './bower_components/angular-ui-notification/dist/angular-ui-notification.min.css',
     './bower_components/components-font-awesome/css/font-awesome.min.css',
-    './bower_components/ng-table/dist/ng-table.css',
     './src/css/*.css',
-    './src/scss/style.scss'
+    './src/scss/main.scss'
   ])
     .pipe(wait(1000))
     .pipe(libsass())
@@ -20,7 +18,7 @@ gulp.task('style', function () {
       cascade: true
     }))
     .pipe(concat('style.css'))
-    .pipe(minifycss({keepSpecialComments: 0}))
+    // .pipe(minifycss({keepSpecialComments: 0}))
     .pipe(gulp.dest('./www/css'))
     .pipe(browserSync.reload({
       stream: true
