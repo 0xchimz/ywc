@@ -1,0 +1,80 @@
+var campaignList = [
+  {
+    id : 1,
+    name : "A",
+    short_description : "blah blah",
+    start_time : "1451937316",
+    end_time : "1451937316",
+    deadline : "1451937316",
+    price : "500",
+    mudjum : "200",
+    picture : "www.google.com",
+    dayList :[
+      {
+        date : "1451937316",
+        description : "day 1 egypt",
+        hotel : 2
+      },
+      {
+        date : "1451937316",
+        description : "day 2 africa",
+        hotel : 1
+      }
+    ],
+    owner : 1,
+    member_list : [2,3,4,5,6]
+    review : [
+      {
+          comment : "beautiful",
+          score : 5,
+          user : 1
+      },
+      {
+          comment : "beautifulverrrrr",
+          score : 5,
+          user : 2
+      },
+    ]
+  }
+]
+
+
+var userList = [
+  {
+    id : 1,
+    name : "worapon",
+    gender : "m",
+    age : 20,
+    picture : "www.google.com",
+    reports : [
+      {
+        comment : "shit",
+        user : 2,
+      }
+    ],
+    comments : [
+      {
+        comment : "good guy",
+        user : 3,
+      }
+    ],
+    campaign_list : [
+      {
+        campaign_id : 1,
+      }
+    ]
+
+  }
+]
+
+var hotelList = [
+  {
+    id : 1,
+    name : "SangSawan Hotel",
+    province : "Bangkok",
+    contact : {
+      tel : "088-888-8888",
+      website : "www.google.com"
+    }
+  }
+]
