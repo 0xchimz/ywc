@@ -3,8 +3,8 @@
     .module('controller.campaign', ['angularMoment'])
     .controller('campaignController', campaignCtrl)
 
-    campaignCtrl.$inject = []
-    function campaignCtrl (){
+    campaignCtrl.$inject = ['$scope']
+    function campaignCtrl ($scope){
       var self = this;
       self.owner = {
         name: "smart Olanwanitchakul",
@@ -41,6 +41,13 @@
           picture: "http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg"
         }
       ]
+
+      self.joinTrip = function(){
+        self.members.push({
+            name: $scope.user.name,
+            picture: $scope.user.picture
+        });
+      }
 
     }
 })()
