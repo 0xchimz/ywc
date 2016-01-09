@@ -28,7 +28,9 @@
       <div class="carousel-inner" role="listbox">
         <div class="item active position_img">
           <div class="b1">
+            <div class="black">
 
+            </div>
           </div>
           <div class="carousel-caption">
             <h3>Chania</h3>
@@ -38,7 +40,9 @@
 
         <div class="item position_img">
           <div class="b2">
+            <div class="black">
 
+            </div>
           </div>
           <div class="carousel-caption">
             <h3>Chania</h3>
@@ -48,7 +52,9 @@
 
         <div class="item position_img">
           <div class="b3">
+            <div class="black">
 
+            </div>
           </div>
           <div class="carousel-caption">
             <h3>Flowers</h3>
@@ -58,7 +64,9 @@
 
         <div class="item position_img">
           <div class="b4">
+            <div class="black">
 
+            </div>
           </div>
           <div class="carousel-caption">
             <h3>Flowers</h3>
@@ -106,20 +114,17 @@
   <div class="joinTrip row">
     <h1 class="text-center">Join New Trip!</h1>
     <h3 class="text-center">หาทริปที่สนใจ</h1>
-    <div class="col-lg-4 " ng-repeat="campaign in campaignList" >
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <image class="img-thumbnail" src="{{campaign.picture}}" style="width=380; height=220">
-
-        </div>
-        <div class="panel-body">
-            <h3>{{campaign.name}}</h3>
-            <p>
-              {{campaign.short_description}}
-            </p>
-            <a class="btn btn-primary btn-block" ui-sref="campaign({campaign_id: $index})">view</a>
-        </div>
+    <div class="col-lg-4" ng-repeat="campaign in campaignList" >
+      <div class="thumbnail">
+        <image class="img-rounded" src="{{campaign.picture}}" style="height:220px;">
+      <div class="caption text-center">
+          <h3>{{campaign.name}}</h3>
+          <p>
+            {{campaign.short_description}}
+          </p>
+          <a class="btn btn-primary btn-block" ui-sref="campaign({campaign_id: $index})">view</a>
       </div>
+            </div>
     </div>
   </div>
 </div>
