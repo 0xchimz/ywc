@@ -15,6 +15,7 @@
         picture: "https://i.ytimg.com/vi/GE2BkLqMef4/maxresdefault.jpg",
         short_description: "blah blah blah",
         start_date: "",
+        price: "500",
         dayList:[
           {
             date : "",

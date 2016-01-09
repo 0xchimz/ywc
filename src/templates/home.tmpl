@@ -122,48 +122,18 @@
   <div class="joinTrip row">
     <h1 class="text-center">Join New Trip!</h1>
     <h3 class="text-center">หาทริปที่สนใจ</h1>
-    <div class="col-lg-4 ">
+    <div class="col-lg-4 " ng-repeat="campaign in campaignList" >
       <div class="panel panel-default">
         <div class="panel-heading">
-          <image class="img-thumbnail" src="https://i.ytimg.com/vi/GE2BkLqMef4/maxresdefault.jpg" style="width=380; height=220">
+          <image class="img-thumbnail" src="{{campaign.picture}}" style="width=380; height=220">
 
         </div>
         <div class="panel-body">
-            <h3>Trip name</h3>
+            <h3>{{campaign.name}}</h3>
             <p>
-              short_description
+              {{campaign.short_description}}
             </p>
             <a class="btn btn-primary btn-block" ui-sref="campaign({campaign_id:1})">view</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-4">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <image class="img-thumbnail" src="https://i.ytimg.com/vi/GE2BkLqMef4/maxresdefault.jpg" style="width=380; height=220">
-
-        </div>
-        <div class="panel-body">
-            <h3>Trip name A</h3>
-            <p>
-              short_description
-            </p>
-            <a class="btn btn-primary btn-block" ui-sref="campaign">view</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-4">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <image class="img-thumbnail" src="https://i.ytimg.com/vi/GE2BkLqMef4/maxresdefault.jpg" style="width=380; height=220">
-
-        </div>
-        <div class="panel-body">
-            <h3>Trip name</h3>
-            <p>
-              short_description
-            </p>
-            <a class="btn btn-primary btn-block" ui-sref="campaign">view</a>
         </div>
       </div>
     </div>
