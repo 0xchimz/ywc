@@ -40,25 +40,24 @@
       self.addDate = function(){
         var start = moment(self.campaign.date.start)
         var end = moment(self.campaign.date.end)
-        var diff = Math.floor(moment.duration(end.diff(start)).asDays()) + 1
-        var tmpList = {}
-        for(var i = 0; i<diff; i++){
-          var index = start.add(i, 'days').valueOf()
-          console.log(index)
-          if(!self.campaign.dateList[index]){
-            tmpList[index] = {
-              location: 'Bangkok',
-              date: index,
-              description: ''
-            }
-          } else {
-            var tmp = self.campaign.dateList[index]
-            tmpList[index] = {
-              location: tmp.location,
-              date: tmp.date,
-              description: tmp.description
+        var diff = Math.floor(moment.duration(end.diff(start)).asDays())
+        var tmpList = []
+        for(var i = 0; i <= diff; i++){
+          var index = moment(start.valueOf()).add(i, 'days').valueOf()
+          var tmp = {
+            location: 'Bangkok',
+            date: index,
+            descriptuion: ''
+          }
+          for (var j = 0; j < self.campaign.dateList.length; j++) {
+            if(moment(self.campaign.dateList[j].date).diff(moment(index), 'day') == 0){
+              tmp.location = self.campaign.dateList[j].location
+              tmp.date = self.campaign.dateList[j].date
+              tmp.description = self.campaign.dateList[j].description
+              break;
             }
           }
+          tmpList.push(tmp)
         }
         self.campaign.dateList = tmpList
       }
