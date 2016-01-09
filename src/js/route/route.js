@@ -37,5 +37,17 @@
         controller: 'reviewCampaignController',
         controllerAs: 'rvCampaignCtrl'
       })
+      .state('triplist', {
+        url: '/triplist',
+        templateUrl: 'templates/triplist.tmpl',
+        controller: 'tripController',
+        controllerAs: 'tripCtrl'
+      })
+      .state('reviewlist', {
+        url: '/reviewlist',
+        templateUrl: 'templates/reviewlist.tmpl',
+        controller: 'reviewController',
+        controllerAs: 'reviewCtrl'
+      })
   }
 })()

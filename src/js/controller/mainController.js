@@ -3,6 +3,8 @@
     .module('controller.main', [])
     .controller('mainController', mainCtrl)
     .controller('homeController', homeCtrl)
+    .controller('tripController', tripCtrl)
+    .controller('reviewController', reviewCtrl)
 
     mainCtrl.$inject = ['$scope']
     function mainCtrl ($scope){
@@ -212,6 +214,16 @@
     function homeCtrl (){
       var self = this
       this.msg = 'สวัสดี OUTHAING'
+
+    }
+    tripCtrl.$inject =['$scope']
+    function tripCtrl ($scope){
+      var self = this
+
+    }
+    reviewCtrl.$inject =['$scope']
+    function reviewCtrl ($scope){
+      var self = this
 
     }
 })()
