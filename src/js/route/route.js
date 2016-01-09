@@ -30,5 +30,6 @@
         templateUrl: 'templates/create.tmpl',
         controller: 'createController',
         controllerAs: 'createCtrl'
+      })
   }
 })()
