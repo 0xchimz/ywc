@@ -1,11 +1,11 @@
 <div class="container-fluid">
   <h1>Create New Campaign</h1>
-  <form class="form-horizontal" name="createCampaign" method="post">
+  <form class="form-horizontal" name="createCampaign" method="post" ng-submit="createCtrl.addCampaign()">
     <div class="col-sm-4">
       <div class="form-group">
         <label for="campaignName" class="col-sm-3 control-label">Campaign Name</label>
         <div class="col-sm-9">
-          <input type="text" class="form-control" name="campaignName" value="" placeholder="Campaign Name">
+          <input type="text" class="form-control" name="campaignName" ng-model="createCtrl.campaign.name" placeholder="Campaign Name">
         </div>
       </div>
       <div class="form-group">
@@ -23,7 +23,7 @@
       <div class="form-group">
         <label for="campaignDescp" class="col-sm-3 control-label">Campaign Description</label>
         <div class="col-sm-9">
-          <textarea name="campaignDescp" rows="8" cols="40" class="form-control"></textarea>
+          <textarea name="campaignDescp" rows="8" cols="40" class="form-control" ng-model="createCtrl.campaign.short_description"></textarea>
         </div>
       </div>
       <div class="form-group">

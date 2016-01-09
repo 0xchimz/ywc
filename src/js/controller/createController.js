@@ -8,15 +8,24 @@
       var self = this
 
       self.campaign = {
+        name: '',
+        picture: 'https://i.ytimg.com/vi/GE2BkLqMef4/maxresdefault.jpg',
+        short_description: '',
         date: {
           start: moment().valueOf(),
           end:  moment().add(7, 'days').valueOf()
         },
+        size: 0,
         dateList: []
       }
 
       $scope.minDate = moment(self.campaign.date.start)
       $scope.maxDate = moment(self.campaign.date.end)
+
+      self.addCampaign = function () {
+        console.log($scope.campaignList)
+        $scope.campaignList.push(self.campaign)
+      }
 
       $scope.changeDate = function (modelName, newValue) {
         //Broadcast Min Max for picker date
