@@ -52,6 +52,7 @@
                 }
               }
             ],
+            price: 5000,
             owner: {
               name: "smart Olanwanitchakul",
               picture: "http://zblogged.com/wp-content/uploads/2015/11/5.png"
@@ -87,6 +88,7 @@
                 }
               }
             ],
+            price: 2000,
             owner: {
               name: "smart Olanwanitchakul",
               picture: "http://zblogged.com/wp-content/uploads/2015/11/5.png"
@@ -122,6 +124,7 @@
                 }
               }
             ],
+            price: 7000,
             owner: {
               name: "smart Olanwanitchakul",
               picture: "http://zblogged.com/wp-content/uploads/2015/11/5.png"
@@ -157,6 +160,7 @@
                 }
               }
             ],
+            price: 12000,
             owner: {
               name: "smart Olanwanitchakul",
               picture: "http://zblogged.com/wp-content/uploads/2015/11/5.png"
