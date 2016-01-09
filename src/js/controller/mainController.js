@@ -94,6 +94,27 @@
                 }
               }
             ]
+          },
+          {
+            name: "ปาย - เชียงใหม่",
+            picture: "https://i.ytimg.com/vi/GE2BkLqMef4/maxresdefault.jpg",
+            short_description: "blah blah blah",
+            start_date: "",
+            dayList:[
+              {
+                date : "",
+                province : "กรุงเทพ",
+                description : "blah blah blah ",
+                hotel : {
+                  name : "suwan hotel",
+                  picture : "http://weknowyourdreams.com/images/house/house-06.jpg",
+                  contact : {
+                    tel : "084564589",
+                    facebook : "http://facebook.com/smart2538"
+                  }
+                }
+              }
+            ]
           }
         ]
     }
