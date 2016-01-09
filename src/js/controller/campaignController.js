@@ -3,35 +3,14 @@
     .module('controller.campaign', ['angularMoment'])
     .controller('campaignController', campaignCtrl)
 
-    campaignCtrl.$inject = ['$scope']
-    function campaignCtrl ($scope){
+    campaignCtrl.$inject = ['$scope', '$stateParams']
+    function campaignCtrl ($scope, $stateParams){
       var self = this;
       self.owner = {
         name: "smart Olanwanitchakul",
         picture: "http://zblogged.com/wp-content/uploads/2015/11/5.png"
       };
-      self.campaign = {
-        name: "ปาย - เชียงใหม่",
-        picture: "https://i.ytimg.com/vi/GE2BkLqMef4/maxresdefault.jpg",
-        short_description: "blah blah blah",
-        start_date: "",
-        price: "500",
-        dayList:[
-          {
-            date : "",
-            province : "กรุงเทพ",
-            description : "blah blah blah ",
-            hotel : {
-              name : "suwan hotel",
-              picture : "http://weknowyourdreams.com/images/house/house-06.jpg",
-              contact : {
-                tel : "084564589",
-                facebook : "http://facebook.com/smart2538"
-              }
-            }
-          }
-        ]
-      };
+      self.campaign = $scope.campaignList[$stateParams.campaign_id];
       self.members = [
         {
           name: "chin clu bi",
