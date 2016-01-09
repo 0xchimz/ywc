@@ -25,5 +25,10 @@
         controller: 'campaignController',
         controllerAs: 'camCtrl'
       })
+      .state('create', {
+        url: '/create',
+        templateUrl: 'templates/create.tmpl',
+        controller: 'createController',
+        controllerAs: 'createCtrl'
   }
 })()

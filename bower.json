@@ -24,6 +24,8 @@
     "moment": "~2.11.0",
     "angular-bootstrap": "~1.0.0",
     "angular-permission": "~1.1.1",
-    "components-font-awesome": "~4.5.0"
+    "components-font-awesome": "~4.5.0",
+    "textAngular": "~1.4.6",
+    "angular-datepicker": "https://github.com/g00fy-/angular-datepicker.git#~2.0.3"
   }
 }

@@ -1,0 +1,75 @@
+<div class="container">
+  <h1>Create New Campaign</h1>
+  <form class="form-horizontal" name="createCampaign" method="post">
+    <div class="form-group">
+      <label for="campaignName" class="col-sm-2 control-label">Campaign Name</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" name="campaignName" value="" placeholder="Campaign Name">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="campaignStartDate" class="col-sm-2 control-label">Start Date</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" name="campaignStartDate" ng-model="createCtrl.campaign.date.start" date-time min-date="createCtrl.campaign.date.start" view="date">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="campaignEndDate" class="col-sm-2 control-label">End Date</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" name="campaignEndDate" ng-model="createCtrl.campaign.date.end" date-time min-date="createCtrl.campaign.date.end" view="date">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="campaignDescp" class="col-sm-2 control-label">Campaign Description</label>
+      <div class="col-sm-10">
+        <textarea name="campaignDescp" rows="8" cols="40" class="form-control"></textarea>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="campaignSetting" class="col-sm-2 control-label">Campaign Setting</label>
+      <div class="col-sm-10">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="campaignSetting"> Female Only
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="campaignSetting"> Male Only
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="campaignThumbnail" class="col-sm-2 control-label">Campaign Thumbnail</label>
+      <div class="col-sm-10">
+        <input type="file" name="compaignThumbnail">
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">Date 1</div>
+        <div class="panel-body">
+          <div class="form-group">
+            <label for="campaignDescp" class="col-sm-2 control-label">Location</label>
+            <div class="col-sm-10">
+              <select class="form-control" name="">
+                <option selected>Bangkok</option>
+                <option>Trang</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="campaignDescp" class="col-sm-2 control-label">Date 1 Description</label>
+            <div class="col-sm-10">
+              <div name="campaignDescp" class="ta-editor" class="form-control" ng-model="htmlVariable" text-angular></div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-default">Create Campaign</button>
+      </div>
+    </div>
+  </form>
+</div>

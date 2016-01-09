@@ -7,6 +7,7 @@
       'controller.main',
       'controller.navbar',
       'controller.campaign',
+      'controller.create',
       'directive.navbar'
     ])
 })()
