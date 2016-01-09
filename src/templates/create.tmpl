@@ -1,74 +1,101 @@
-<div class="container">
+<div class="container-fluid">
   <h1>Create New Campaign</h1>
   <form class="form-horizontal" name="createCampaign" method="post">
-    <div class="form-group">
-      <label for="campaignName" class="col-sm-2 control-label">Campaign Name</label>
-      <div class="col-sm-10">
-        <input type="text" class="form-control" name="campaignName" value="" placeholder="Campaign Name">
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="campaignStartDate" class="col-sm-2 control-label">Start Date</label>
-      <div class="col-sm-10">
-        <input type="text" class="form-control" name="campaignStartDate" ng-model="createCtrl.campaign.date.start" date-time min-date="createCtrl.campaign.date.start" view="date">
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="campaignEndDate" class="col-sm-2 control-label">End Date</label>
-      <div class="col-sm-10">
-        <input type="text" class="form-control" name="campaignEndDate" ng-model="createCtrl.campaign.date.end" date-time min-date="createCtrl.campaign.date.end" view="date">
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="campaignDescp" class="col-sm-2 control-label">Campaign Description</label>
-      <div class="col-sm-10">
-        <textarea name="campaignDescp" rows="8" cols="40" class="form-control"></textarea>
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="campaignSetting" class="col-sm-2 control-label">Campaign Setting</label>
-      <div class="col-sm-10">
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" name="campaignSetting"> Female Only
-          </label>
-        </div>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" name="campaignSetting"> Male Only
-          </label>
+    <div class="col-sm-4">
+      <div class="form-group">
+        <label for="campaignName" class="col-sm-3 control-label">Campaign Name</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" name="campaignName" value="" placeholder="Campaign Name">
         </div>
       </div>
-    </div>
-    <div class="form-group">
-      <label for="campaignThumbnail" class="col-sm-2 control-label">Campaign Thumbnail</label>
-      <div class="col-sm-10">
-        <input type="file" name="compaignThumbnail">
+      <div class="form-group">
+        <label for="campaignStartDate" class="col-sm-3 control-label">Start Date</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" name="campaignStartDate" id="campaignStartDate" ng-model="createCtrl.campaign.date.start" date-time format="DD MMM YYYY" min-view="date" max-date="maxDate" date-change="changeDate" view="date">
+        </div>
       </div>
-    </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">Date 1</div>
-        <div class="panel-body">
-          <div class="form-group">
-            <label for="campaignDescp" class="col-sm-2 control-label">Location</label>
-            <div class="col-sm-10">
-              <select class="form-control" name="">
-                <option selected>Bangkok</option>
-                <option>Trang</option>
-              </select>
-            </div>
+      <div class="form-group">
+        <label for="campaignEndDate" class="col-sm-3 control-label">End Date</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" name="campaignEndDate" id="campaignEndDate" ng-model="createCtrl.campaign.date.end" date-time format="DD MMM YYYY" min-view="date" min-date="minDate" date-change="changeDate" view="date">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="campaignDescp" class="col-sm-3 control-label">Campaign Description</label>
+        <div class="col-sm-9">
+          <textarea name="campaignDescp" rows="8" cols="40" class="form-control"></textarea>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="campaignDescp" class="col-sm-3 control-label">Campaign Size</label>
+        <div class="col-sm-9">
+          <select class="form-control">
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="campaignSetting" class="col-sm-3 control-label">Campaign Setting</label>
+        <div class="col-sm-9">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="campaignSetting"> Female Only
+            </label>
           </div>
-          <div class="form-group">
-            <label for="campaignDescp" class="col-sm-2 control-label">Date 1 Description</label>
-            <div class="col-sm-10">
-              <div name="campaignDescp" class="ta-editor" class="form-control" ng-model="htmlVariable" text-angular></div>
-            </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="campaignSetting"> Male Only
+            </label>
           </div>
         </div>
+      </div>
+      <div class="form-group">
+        <label for="campaignThumbnail" class="col-sm-3 control-label">Campaign Thumbnail</label>
+        <div class="col-sm-9">
+          <input type="file" name="compaignThumbnail">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-3 col-sm-9">
+          <button type="submit" class="btn btn-default">Create Campaign</button>
+        </div>
+      </div>
     </div>
-    <div class="form-group">
-      <div class="col-sm-offset-2 col-sm-10">
-        <button type="submit" class="btn btn-default">Create Campaign</button>
+    <div class="col-sm-8">
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default" ng-repeat="campaign in createCtrl.campaign.dateList">
+          <div class="panel-heading" role="tab" id="heading{{$index + 1}}">
+            <a href="javascript:;" data-toggle="collapse" data-parent="#accordion" data-target="#collapse{{$index + 1}}">
+              {{campaign.date | amDateFormat:'YYYY-MM-DD'}}
+            </a>
+            </div>
+            <div id="collapse{{$index + 1}}" class="panel-collapse collapse " role="tabpanel" aria-labelledby="heading{{$index + 1}}">
+              <div class="panel-body">
+                <div class="form-group">
+                  <label for="campaignDescp" class="col-sm-2 control-label">Location</label>
+                  <div class="col-sm-10">
+                    <select class="form-control" >
+                      <option>Bangkok</option>
+                      <option>Trang</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="campaignDescp{{$index + 1}}" class="col-sm-2 control-label">Description</label>
+                  <div class="col-sm-10">
+                    <div name="campaignDescp{{$index + 1}}" class="ta-editor" class="form-control" ng-model="campaign.description" text-angular></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
       </div>
     </div>
   </form>
