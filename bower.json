@@ -1,0 +1,29 @@
+{
+  "name": "ywc",
+  "description": "YWC OUTHAING",
+  "main": "gulpfile.js",
+  "authors": [
+    "Chinnaporn <chinnaporn.s@ku.th>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/chinclubi/ywc",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.8",
+    "angular-ui-router": "~0.2.15",
+    "bootstrap-sass": "~3.3.6",
+    "angular-animate": "~1.4.8",
+    "angular-moment": "~0.10.3",
+    "moment": "~2.11.0",
+    "angular-bootstrap": "~1.0.0",
+    "angular-permission": "~1.1.1",
+    "components-font-awesome": "~4.5.0"
+  }
+}

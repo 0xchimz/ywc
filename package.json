@@ -2,7 +2,7 @@
   "name": "ywc",
   "version": "1.0.0",
   "description": "YWC OUTHAING",
-  "main": "app.js",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +15,17 @@
   "bugs": {
     "url": "https://github.com/chinclubi/ywc/issues"
   },
-  "homepage": "https://github.com/chinclubi/ywc#readme"
+  "homepage": "https://github.com/chinclubi/ywc#readme",
+  "devDependencies": {
+    "browser-sync": "^2.11.0",
+    "fs": "0.0.2",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify-css": "^1.2.3",
+    "gulp-sass": "^2.1.1",
+    "gulp-uglify": "^1.5.1",
+    "gulp-wait": "0.0.2",
+    "require-dir": "^0.3.0"
+  }
 }
