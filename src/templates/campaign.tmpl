@@ -8,7 +8,7 @@
         </div>
         <div class="col-lg-4">
           <div class="row date">
-            วันที่: <span>{{camCtrl.campaign.date.start | amCalendar}}</span> - <span>{{camCtrl.campaign.date.end | amCalendar}}</span>
+            วันที่: <span>{{camCtrl.campaign.date.start | amDateFormat:'MM.DD.YYYY'}}</span> - <span>{{camCtrl.campaign.date.end | amDateFormat:'MM.DD.YYYY'}}</span>
           </div>
           <div class="row shortDesc">
             รายละเอียดเบื้องต้น: {{camCtrl.campaign.short_description}}
@@ -20,13 +20,13 @@
             <div class="row">
               <div class="owner">
                 <div class="col-lg-2">
-                  <img class="img-circle" src="http://zblogged.com/wp-content/uploads/2015/11/5.png" data-holder-rendered="true" style="width: 40px; height: 40px;">
+                  <img class="img-circle" src="{{camCtrl.campaign.owner.picture}}" data-holder-rendered="true" style="width: 40px; height: 40px;">
                 </div>
                 <div class="col-lg-7" >
                   <div >{{camCtrl.campaign.owner.name}}</div>
                 </div>
                 <div class="col-lg-3">
-                  {{camCtrl.members.length+ 1}}/8
+                  {{camCtrl.campaign.members.length}}/8
                 </div>
               </div>
             </div>
@@ -41,7 +41,7 @@
               </div>
             </div>
           </div>
-          <div class="joinTrip">
+          <div class="joinTrip" ng-show="user.name !== camCtrl.campaign.owner.name && !camCtrl.inTrip">
             <a class="btn btn-primary btn-block" ng-click="camCtrl.joinTrip()">join this trip</a>
           </div>
         </div>

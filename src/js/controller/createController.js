@@ -3,8 +3,8 @@
     .module('controller.create', ['textAngular', 'datePicker', 'angularMoment'])
     .controller('createController', createCtrl)
 
-    createCtrl.$inject = ['$scope']
-    function createCtrl ($scope){
+    createCtrl.$inject = ['$scope', '$state', 'Notification']
+    function createCtrl ($scope, $state, Notification){
       var self = this
 
       self.campaign = {
@@ -15,6 +15,8 @@
           start: moment().valueOf(),
           end:  moment().add(7, 'days').valueOf()
         },
+        owner: $scope.user,
+        members: [],
         prize: 0,
         size: 0,
         dateList: []
@@ -26,6 +28,8 @@
       self.addCampaign = function () {
         console.log($scope.campaignList)
         $scope.campaignList.push(self.campaign)
+        Notification.success('Success notification');
+        $state.go("campaign", {campaign_id: $scope.campaignList.length - 1})
       }
 
       $scope.changeDate = function (modelName, newValue) {

@@ -27,6 +27,7 @@
     "components-font-awesome": "~4.5.0",
     "textAngular": "~1.4.6",
     "angular-datepicker": "https://github.com/g00fy-/angular-datepicker.git#~2.0.3",
-    "Bootflat": "~2.0.4"
+    "Bootflat": "~2.0.4",
+    "angular-ui-notification": "~0.1.0"
   }
 }

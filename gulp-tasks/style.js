@@ -11,6 +11,7 @@ gulp.task('style', function () {
     './bower_components/components-font-awesome/css/font-awesome.min.css',
     './bower_components/textAngular/dist/textAngular.css',
     './bower_components/angular-datepicker/dist/angular-datepicker.css',
+    './bower_components/angular-ui-notification/dist/angular-ui-notification.min.css',
     './src/css/*.css',
     './src/scss/main.scss'
   ])

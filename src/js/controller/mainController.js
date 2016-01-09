@@ -1,10 +1,21 @@
 ;(function(){
   angular
-    .module('controller.main', [])
+    .module('controller.main', ['ui-notification'])
     .controller('mainController', mainCtrl)
     .controller('homeController', homeCtrl)
     .controller('tripController', tripCtrl)
     .controller('reviewController', reviewCtrl)
+    .config(function(NotificationProvider) {
+        NotificationProvider.setOptions({
+            delay: 10000,
+            startTop: 20,
+            startRight: 10,
+            verticalSpacing: 20,
+            horizontalSpacing: 20,
+            positionX: 'left',
+            positionY: 'bottom'
+        });
+    });
 
     mainCtrl.$inject = ['$scope']
     function mainCtrl ($scope){
@@ -56,8 +67,8 @@
             ],
             price: 5000,
             owner: {
-              name: "smart Olanwanitchakul",
-              picture: "http://zblogged.com/wp-content/uploads/2015/11/5.png"
+              name: "Chinnaporn Soonue",
+              picture: "http://vignette4.wikia.nocookie.net/himoto-umaruchan/images/8/89/Main_Page_Image.jpg/revision/latest?cb=20150814104030"
             },
             members: [
               {
@@ -92,8 +103,8 @@
             ],
             price: 2000,
             owner: {
-              name: "smart Olanwanitchakul",
-              picture: "http://zblogged.com/wp-content/uploads/2015/11/5.png"
+              name: "Chinnaporn Soonue",
+              picture: "http://vignette4.wikia.nocookie.net/himoto-umaruchan/images/8/89/Main_Page_Image.jpg/revision/latest?cb=20150814104030"
             },
             members: [
               {
@@ -128,8 +139,8 @@
             ],
             price: 7000,
             owner: {
-              name: "smart Olanwanitchakul",
-              picture: "http://zblogged.com/wp-content/uploads/2015/11/5.png"
+              name: "Chinnaporn Soonue",
+              picture: "http://vignette4.wikia.nocookie.net/himoto-umaruchan/images/8/89/Main_Page_Image.jpg/revision/latest?cb=20150814104030"
             },
             members: [
               {
@@ -164,7 +175,7 @@
             ],
             price: 12000,
             owner: {
-              name: "smart Olanwanitchakul",
+              name: "Worapon Olanwanitchakul",
               picture: "http://zblogged.com/wp-content/uploads/2015/11/5.png"
             },
             members: [

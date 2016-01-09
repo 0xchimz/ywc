@@ -18,6 +18,7 @@ gulp.task('script', function () {
     './bower_components/angular-bootstrap/ui-bootstrap-tpls.js',
     './bower_components/angular-moment/angular-moment.min.js',
     './bower_components/bootstrap-sass/assets/javascripts/bootstrap.js',
+    './bower_components/angular-ui-notification/dist/angular-ui-notification.min.js',
     './src/js/**/*.js'])
     .pipe(concat('scripts.js'))
     // .pipe(uglify({mangle: false}))
