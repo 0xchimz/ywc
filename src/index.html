@@ -2,11 +2,15 @@
 <html ng-app="ywc">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>OUTHAING</title>
     <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
     <script src="js/scripts.js" charset="utf-8"></script>
   </head>
   <body ng-controller="mainController">
-    <ui-view></ui-view>
+    <navbar></navbar>
+  	<div ui-view></div ui-view>
+  	<footer></footer>
   </body>
 </html>

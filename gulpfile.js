@@ -9,6 +9,7 @@ gulp.task('default', ['compile'], function () {
   gulp.watch('./src/**/*.tmpl', ['html'])
   gulp.watch('./src/scss/**/*.*', ['style'])
   gulp.watch('./src/js/**/*.js', ['script'])
+  gulp.watch('./src/index.html')
 
   browserSync({
     notify: false,

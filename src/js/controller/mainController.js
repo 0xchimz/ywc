@@ -12,6 +12,6 @@
     homeCtrl.$inject = []
     function homeCtrl (){
       var self = this
-      this.msg = 'สวัสดี OUTHAIng'
+      this.msg = 'สวัสดี OUTHAING'
     }
 })()

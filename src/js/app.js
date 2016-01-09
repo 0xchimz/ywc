@@ -4,6 +4,8 @@
   angular
     .module('ywc', [
       'services.route',
-      'controller.main'
+      'controller.main',
+      'controller.navbar',
+      'directive.navbar'
     ])
 })()
