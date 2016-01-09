@@ -8,7 +8,7 @@
         </div>
         <div class="col-lg-4">
           <div class="row date">
-            วันที่: <span>{{camCtrl.campaign.start_time | amCalendar}}</span> - <span>{{camCtrl.campaign.end_time | amCalendar}}</span>
+            วันที่: <span>{{camCtrl.campaign.date.start | amCalendar}}</span> - <span>{{camCtrl.campaign.date.end | amCalendar}}</span>
           </div>
           <div class="row shortDesc">
             รายละเอียดเบื้องต้น: {{camCtrl.campaign.short_description}}
@@ -23,14 +23,14 @@
                   <img class="img-circle" src="http://zblogged.com/wp-content/uploads/2015/11/5.png" data-holder-rendered="true" style="width: 40px; height: 40px;">
                 </div>
                 <div class="col-lg-7" >
-                  <div >{{camCtrl.owner.name}}</div>
+                  <div >{{camCtrl.campaign.owner.name}}</div>
                 </div>
                 <div class="col-lg-3">
                   {{camCtrl.members.length+ 1}}/8
                 </div>
               </div>
             </div>
-            <div ng-repeat="member in camCtrl.members" class="members row">
+            <div ng-repeat="member in camCtrl.campaign.members" class="members row">
               <div class="col-lg-2">
                 <img class="img-circle" src="{{member.picture}}" data-holder-rendered="true" style="width: 40px; height: 40px;">
               </div>
@@ -49,8 +49,8 @@
     </div>
   </div>
   <div class="panel panel-default" ng-repeat="date in camCtrl.campaign.dateList">
-    <div class="panel-heading">{{date.location}}</div>
-    <div class="panel-body"  ng-bind-html="date.description">
+    <div class="panel-heading">{{date.location}} | {{date.date | amDateFormat:'MM.DD.YYYY'}}</div>
+    <div class="panel-body"  ng-bind-html="date.description | to_trusted">
     </div>
   </div>
 </div>

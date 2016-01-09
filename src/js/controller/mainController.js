@@ -8,7 +8,7 @@
     function mainCtrl ($scope){
       var self = this
       $scope.user = {
-          name : "worapon Olanwanitchakul",
+          name : "Worapon Olanwanitchakul",
           gender : "m",
           age : 20,
           picture : "http://www.deyoungmedia.com/wp-content/uploads/2014/07/steve-jobs-morreu-brasil-153927.jpg",
@@ -51,26 +51,19 @@
                   }
                 }
               }
-            ]
-          },
-          {
-            name: "ปาย - เชียงใหม่",
-            picture: "https://i.ytimg.com/vi/GE2BkLqMef4/maxresdefault.jpg",
-            short_description: "blah blah blah",
-            start_date: "",
-            dateList:[
+            ],
+            owner: {
+              name: "smart Olanwanitchakul",
+              picture: "http://zblogged.com/wp-content/uploads/2015/11/5.png"
+            },
+            members: [
               {
-                date : "",
-                location : "กรุงเทพ",
-                description : "blah blah blah ",
-                hotel : {
-                  name : "suwan hotel",
-                  picture : "http://weknowyourdreams.com/images/house/house-06.jpg",
-                  contact : {
-                    tel : "084564589",
-                    facebook : "http://facebook.com/smart2538"
-                  }
-                }
+                name: "chin clu bi",
+                picture: "http://zblogged.com/wp-content/uploads/2015/11/17.jpg"
+              },
+              {
+                name: "ong ong ong",
+                picture: "http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg"
               }
             ]
           },
@@ -93,6 +86,20 @@
                   }
                 }
               }
+            ],
+            owner: {
+              name: "smart Olanwanitchakul",
+              picture: "http://zblogged.com/wp-content/uploads/2015/11/5.png"
+            },
+            members: [
+              {
+                name: "chin clu bi",
+                picture: "http://zblogged.com/wp-content/uploads/2015/11/17.jpg"
+              },
+              {
+                name: "ong ong ong",
+                picture: "http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg"
+              }
             ]
           },
           {
@@ -113,6 +120,55 @@
                     facebook : "http://facebook.com/smart2538"
                   }
                 }
+              }
+            ],
+            owner: {
+              name: "smart Olanwanitchakul",
+              picture: "http://zblogged.com/wp-content/uploads/2015/11/5.png"
+            },
+            members: [
+              {
+                name: "chin clu bi",
+                picture: "http://zblogged.com/wp-content/uploads/2015/11/17.jpg"
+              },
+              {
+                name: "ong ong ong",
+                picture: "http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg"
+              }
+            ]
+          },
+          {
+            name: "ปาย - เชียงใหม่",
+            picture: "https://i.ytimg.com/vi/GE2BkLqMef4/maxresdefault.jpg",
+            short_description: "blah blah blah",
+            start_date: "",
+            dateList:[
+              {
+                date : "",
+                location : "กรุงเทพ",
+                description : "blah blah blah ",
+                hotel : {
+                  name : "suwan hotel",
+                  picture : "http://weknowyourdreams.com/images/house/house-06.jpg",
+                  contact : {
+                    tel : "084564589",
+                    facebook : "http://facebook.com/smart2538"
+                  }
+                }
+              }
+            ],
+            owner: {
+              name: "smart Olanwanitchakul",
+              picture: "http://zblogged.com/wp-content/uploads/2015/11/5.png"
+            },
+            members: [
+              {
+                name: "chin clu bi",
+                picture: "http://zblogged.com/wp-content/uploads/2015/11/17.jpg"
+              },
+              {
+                name: "ong ong ong",
+                picture: "http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg"
               }
             ]
           }

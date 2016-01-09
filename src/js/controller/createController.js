@@ -15,6 +15,7 @@
           start: moment().valueOf(),
           end:  moment().add(7, 'days').valueOf()
         },
+        prize: 0,
         size: 0,
         dateList: []
       }
