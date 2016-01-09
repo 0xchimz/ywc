@@ -47,7 +47,7 @@
         $scope.campaignList = [
           {
             name: "ปาย - เชียงใหม่",
-            picture: "/imgs/join_03.jpg",
+            picture: "/imgs/01.jpg",
             short_description: "blah blah blah",
             start_date: "",
             dateList:[
@@ -83,7 +83,7 @@
           },
           {
             name: "ปาย - เชียงใหม่",
-            picture: "/imgs/join_06.jpg",
+            picture: "/imgs/02.jpg",
             short_description: "blah blah blah",
             start_date: "",
             dateList:[
@@ -119,7 +119,7 @@
           },
           {
             name: "ปาย - เชียงใหม่",
-            picture: "/imgs/join_09.jpg",
+            picture: "/imgs/03.jpg",
             short_description: "blah blah blah",
             start_date: "",
             dateList:[
@@ -141,42 +141,6 @@
             owner: {
               name: "Chinnaporn Soonue",
               picture: "http://vignette4.wikia.nocookie.net/himoto-umaruchan/images/8/89/Main_Page_Image.jpg/revision/latest?cb=20150814104030"
-            },
-            members: [
-              {
-                name: "chin clu bi",
-                picture: "http://zblogged.com/wp-content/uploads/2015/11/17.jpg"
-              },
-              {
-                name: "ong ong ong",
-                picture: "http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg"
-              }
-            ]
-          },
-          {
-            name: "ปาย - เชียงใหม่",
-            picture: "https://i.ytimg.com/vi/GE2BkLqMef4/maxresdefault.jpg",
-            short_description: "blah blah blah",
-            start_date: "",
-            dateList:[
-              {
-                date : "",
-                location : "กรุงเทพ",
-                description : "blah blah blah ",
-                hotel : {
-                  name : "suwan hotel",
-                  picture : "http://weknowyourdreams.com/images/house/house-06.jpg",
-                  contact : {
-                    tel : "084564589",
-                    facebook : "http://facebook.com/smart2538"
-                  }
-                }
-              }
-            ],
-            price: 12000,
-            owner: {
-              name: "Worapon Olanwanitchakul",
-              picture: "http://zblogged.com/wp-content/uploads/2015/11/5.png"
             },
             members: [
               {
