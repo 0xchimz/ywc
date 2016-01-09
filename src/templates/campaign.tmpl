@@ -48,15 +48,9 @@
       </div>
     </div>
   </div>
-  <div class="tripPlan row">
-    <div ng-repeat="day in camCtrl.campaign.dayList" class="panel panel-default col-lg-4">
-      <p>
-        {{day.date}}
-      </p>
-
-
-      </div>
+  <div class="panel panel-default" ng-repeat="date in camCtrl.campaign.dateList">
+    <div class="panel-heading">{{date.location}}</div>
+    <div class="panel-body"  ng-bind-html="date.description">
     </div>
-
   </div>
 </div>
