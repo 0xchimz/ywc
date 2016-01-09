@@ -37,10 +37,10 @@
             picture: "https://i.ytimg.com/vi/GE2BkLqMef4/maxresdefault.jpg",
             short_description: "blah blah blah",
             start_date: "",
-            dayList:[
+            dateList:[
               {
                 date : "",
-                province : "กรุงเทพ",
+                location : "กรุงเทพ",
                 description : "blah blah blah ",
                 hotel : {
                   name : "suwan hotel",
@@ -58,10 +58,10 @@
             picture: "https://i.ytimg.com/vi/GE2BkLqMef4/maxresdefault.jpg",
             short_description: "blah blah blah",
             start_date: "",
-            dayList:[
+            dateList:[
               {
                 date : "",
-                province : "กรุงเทพ",
+                location : "กรุงเทพ",
                 description : "blah blah blah ",
                 hotel : {
                   name : "suwan hotel",
@@ -79,10 +79,10 @@
             picture: "https://i.ytimg.com/vi/GE2BkLqMef4/maxresdefault.jpg",
             short_description: "blah blah blah",
             start_date: "",
-            dayList:[
+            dateList:[
               {
                 date : "",
-                province : "กรุงเทพ",
+                location : "กรุงเทพ",
                 description : "blah blah blah ",
                 hotel : {
                   name : "suwan hotel",
@@ -100,10 +100,10 @@
             picture: "https://i.ytimg.com/vi/GE2BkLqMef4/maxresdefault.jpg",
             short_description: "blah blah blah",
             start_date: "",
-            dayList:[
+            dateList:[
               {
                 date : "",
-                province : "กรุงเทพ",
+                location : "กรุงเทพ",
                 description : "blah blah blah ",
                 hotel : {
                   name : "suwan hotel",
