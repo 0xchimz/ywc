@@ -117,6 +117,35 @@
             ]
           }
         ]
+        $scope.rvCampaignList = [
+          {
+            name: "กรุงเทพ - กาญจนบุรี",
+            picture: "https://i.ytimg.com/vi/GE2BkLqMef4/maxresdefault.jpg",
+            short_description: "blah blah blah",
+            start_date: "",
+            review: "GO SOME WHERE BLAH BLAH BLAH BLAH",
+            score: 90
+
+          },
+          {
+            name: "กรุงเทพ - กาญจนบุรี",
+            picture: "https://i.ytimg.com/vi/GE2BkLqMef4/maxresdefault.jpg",
+            short_description: "blah blah blah",
+            start_date: "",
+            review: "GO SOME WHERE BLAH BLAH BLAH BLAH",
+            score: 90
+
+          },
+          {
+            name: "กรุงเทพ - กาญจนบุรี",
+            picture: "https://i.ytimg.com/vi/GE2BkLqMef4/maxresdefault.jpg",
+            short_description: "blah blah blah",
+            start_date: "",
+            review: "GO SOME WHERE BLAH BLAH BLAH BLAH",
+            score: 90
+
+          },
+        ]
     }
 
     homeCtrl.$inject = []

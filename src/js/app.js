@@ -8,6 +8,7 @@
       'controller.navbar',
       'controller.campaign',
       'controller.create',
+      'controller.reviewCampaign',
       'directive.navbar'
     ])
 })()

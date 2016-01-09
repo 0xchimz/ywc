@@ -31,5 +31,11 @@
         controller: 'createController',
         controllerAs: 'createCtrl'
       })
+      .state('rvcampaign', {
+        url: '/rvcampaign/{campaign_id:int}',
+        templateUrl: 'templates/reviewcampaign.tmpl',
+        controller: 'reviewCampaignController',
+        controllerAs: 'rvCampaignCtrl'
+      })
   }
 })()
